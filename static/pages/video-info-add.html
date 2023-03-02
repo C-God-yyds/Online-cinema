@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Project Add</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/static/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/static/dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<!-- Site wrapper -->
+
+  <!-- Navbar -->
+
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+
+
+  <!-- Content Wrapper. Contains page content -->
+
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+              <li class="breadcrumb-item active">新增视频信息</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="card card-primary">
+            <div class="card-header">
+
+
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="v_name">视频名称</label>
+                <input type="text" id="v_name" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="director">导演</label>
+                <input type="text" id="director" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="leading_players">主演</label>
+                <input type="text" id="leading_players" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="language_id">语言类型</label>
+                <select id="language_id" class="form-control custom-select">
+
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="video_type_id">视频类型</label>
+                <select id="video_type_id" class="form-control custom-select">
+
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="district_id">地区</label>
+                <select id="district_id" class="form-control custom-select">
+
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="synopsis">简介</label>
+                <textarea id="synopsis" class="form-control" rows="4"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="episodes">集数</label>
+                <input type="text" id="episodes" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="release_time">上映时间</label>
+                <input type="text" id="release_time" class="form-control" placeholder="2002-12-26">
+              </div>
+              <div class="form-group">
+                <label for="show_type_id">上映类型</label>
+                <select id="show_type_id" class="form-control custom-select">
+
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="classification_id">分类</label>
+                <select id="classification_id" class="form-control custom-select">
+
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="labels">标签</label>
+                <div id="labels">
+                  <!--<div class="icheck-primary d-inline">
+                    <input type="checkbox" id="c1">
+                    <label for="c1">情感</label>
+                  </div>-->
+
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="v_pic">图片</label>
+                <input type="file" id="v_pic">
+              </div>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <div class="col-md-2"></div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <a href="javascript:void(0)" class="btn btn-secondary">取消</a>
+          <input type="button" value="提交" class="btn btn-success float-right" onclick="submit_form()">
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </section>
+    <!-- /.content -->
+
+  <!-- /.content-wrapper -->
+
+
+
+  <!-- /.control-sidebar -->
+
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="/static/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="/static/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/static/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="/static/dist/js/demo.js"></script>
+
+<script src="/static/js/video-info-add.js"></script>
+</body>
+</html>

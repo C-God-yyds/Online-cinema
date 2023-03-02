@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Project Add</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/static/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/static/dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<!-- Site wrapper -->
+
+  <!-- Navbar -->
+
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+
+
+  <!-- Content Wrapper. Contains page content -->
+
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+              <li class="breadcrumb-item active">新增菜单</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="card card-primary">
+            <div class="card-header">
+
+
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                  <i class="fas fa-minus"></i>
+                </button>
+              </div>
+            </div>
+            <!-- 隐藏域，用来存放修改数据的id值 -->
+            <input type="hidden" id="id">
+            <div class="card-body">
+              <div class="form-group">
+                <label for="menu_code">菜单编码</label>
+                <input type="text" id="menu_code" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="menu_name">菜单名称</label>
+                <input type="text" id="menu_name" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="menu_url">菜单url</label>
+                <input type="text" id="menu_url" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="menu_level">菜单级别</label>
+                <select id="menu_level" class="form-control custom-select" onchange="load_parent_menus(this)">
+                  <option value="">--请选择--</option>
+                  <option value="1">一级菜单</option>
+                  <option value="2">二级菜单</option>
+                </select>
+              </div>
+
+              <!-- 父菜单下拉列表，当上面的菜单级别选择了二级菜单，去数据库加载所有的一级菜单 -->
+              <div class="form-group">
+                <label for="parent_id">父菜单</label>
+                <select id="parent_id" class="form-control custom-select">
+
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="sort">排序</label>
+                <input type="text" id="sort" class="form-control">
+              </div>
+
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <div class="col-md-2"></div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <a href="javascript:void(0)" class="btn btn-secondary">取消</a>
+          <input type="button" value="提交" class="btn btn-success float-right" onclick="submit_from()">
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </section>
+    <!-- /.content -->
+
+  <!-- /.content-wrapper -->
+
+
+
+  <!-- /.control-sidebar -->
+
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="/static/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="/static/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/static/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="/static/dist/js/demo.js"></script>
+
+<script src="/static/js/menu-add.js"></script>
+</body>
+</html>
